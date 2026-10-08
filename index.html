@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abhishek Chauhan | Full Stack Developer</title>
+    <meta name="theme-color" content="#211b19" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta
       name="description"
       content="Premium SaaS-style portfolio resume for Abhishek Chauhan, Full Stack Developer and React Python Developer."
@@ -14,20 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=13" />
+    <script src="script.js?v=13" defer></script>
   </head>
   <body>
-    <div class="preloader" aria-label="Loading portfolio">
-      <div class="preloader-card">
-        <div class="preloader-mark">AC</div>
-        <div>
-          <p>AbhiStacks</p>
-          <h2>Loading portfolio</h2>
-        </div>
-        <div class="preloader-line"><span></span></div>
-      </div>
-    </div>
     <header class="site-header">
       <a class="brand" href="#top">
         <span>AC</span>
@@ -46,7 +38,7 @@
         target="_blank"
         rel="noreferrer"
       >
-        Hire Me
+        Let’s Build
       </a>
     </header>
 
@@ -56,7 +48,13 @@
           <p class="availability"><span></span> Available for projects</p>
           <h1>
             Building SaaS dashboards, CRM portals &
-            <span class="typewriter-text">websites that drive results.</span>
+            <span class="typewriter-text" aria-label="websites that drive results.">
+              <span class="typewriter-reserve" aria-hidden="true">websites that drive results.</span>
+              <span class="typewriter-reserve" aria-hidden="true">web products that scale.</span>
+              <span class="typewriter-reserve" aria-hidden="true">CRM systems that work.</span>
+              <span class="typewriter-reserve" aria-hidden="true">dashboards that simplify.</span>
+              <span class="typewriter-live" aria-hidden="true">websites that drive results.</span>
+            </span>
           </h1>
           <p class="hero-subtitle">
             I am Abhishek Chauhan, a React and Python developer with 4 years of
@@ -71,23 +69,13 @@
           <div class="hero-stats" aria-label="Portfolio highlights">
             <div><strong>4+</strong><span>Years of Experience</span></div>
             <div><strong>25+</strong><span>Websites & Portals Delivered</span></div>
-            <div><strong>100%</strong><span>Client Satisfaction</span></div>
+            <div><strong>7</strong><span>Featured Projects</span></div>
           </div>
         </div>
 
         <div class="hero-visual" aria-label="Portfolio dashboard preview">
-          <img src="hero-dashboard-mockup.png" alt="Laptop dashboard mockup with project metrics" />
+          <img fetchpriority="high" decoding="async" src="hero-dashboard-mockup.png" alt="Laptop dashboard mockup with project metrics" />
         </div>
-      </section>
-
-      <section class="logo-strip" aria-label="Project domains">
-        <p>Trusted by businesses across industries</p>
-        <a href="https://stalldesigns.com" target="_blank" rel="noreferrer"><span>S</span> stalldesigns.com</a>
-        <a href="https://stalldesigns.in" target="_blank" rel="noreferrer"><span>S</span> stalldesigns.in</a>
-        <a href="https://boothfabricators.com" target="_blank" rel="noreferrer"><span>B</span> boothfabricators.com</a>
-        <a href="https://acequads.com" target="_blank" rel="noreferrer"><span>A</span> acequads.com</a>
-        <a href="https://boothxperts.com" target="_blank" rel="noreferrer"><span>B</span> boothxperts.com</a>
-        <a href="https://konkon.in" target="_blank" rel="noreferrer"><span>K</span> konkon.in</a>
       </section>
 
       <section id="work" class="section work-section">
@@ -101,179 +89,284 @@
             <h3>Stall Designs CRM</h3>
             <span>Python, Flask, HTMX, PostgreSQL</span>
             <img
-              src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fstalldesigns.in%2F?w=900"
+              loading="eager" decoding="async" width="900" height="675"
+              src="assets/projects/stall-designs-crm.jpg"
               alt="Stall Designs CRM preview"
             />
+            <dl class="case-details">
+              <div><dt>Need</dt><dd>Centralize lead and follow-up workflows.</dd></div>
+              <div><dt>My work</dt><dd>Built CRM workflows with Flask, HTMX and PostgreSQL.</dd></div>
+              <div><dt>Delivered</dt><dd>A CRM portal for lead and client operations.</dd></div>
+            </dl>
+            <span class="case-visit">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg></span>
           </a>
           <a class="case-card" href="https://stalldesigns.com" target="_blank" rel="noreferrer">
             <p>Company Website</p>
             <h3>Stall Designs</h3>
             <span>React, responsive UI, brand pages</span>
             <img
-              src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.stalldesigns.com%2F?w=900"
+              loading="eager" decoding="async" width="900" height="675"
+              src="assets/projects/stall-designs.jpg"
               alt="Stall Designs website preview"
             />
+            <dl class="case-details">
+              <div><dt>Need</dt><dd>Present the company and its services online.</dd></div>
+              <div><dt>My work</dt><dd>Built responsive React UI and brand pages.</dd></div>
+              <div><dt>Delivered</dt><dd>A company website with service information.</dd></div>
+            </dl>
+            <span class="case-visit">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg></span>
           </a>
           <a class="case-card" href="https://boothfabricators.com" target="_blank" rel="noreferrer">
             <p>Lead Generation</p>
             <h3>Booth Fabricators</h3>
             <span>Portfolio pages and enquiry flow</span>
             <img
-              src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fboothfabricators.com%2F?w=900"
+              loading="eager" decoding="async" width="900" height="675"
+              src="assets/projects/booth-fabricators.jpg"
               alt="Booth Fabricators website preview"
             />
+            <dl class="case-details">
+              <div><dt>Need</dt><dd>Showcase project work and capture enquiries.</dd></div>
+              <div><dt>My work</dt><dd>Built portfolio pages and the enquiry flow.</dd></div>
+              <div><dt>Delivered</dt><dd>A website focused on portfolio and enquiries.</dd></div>
+            </dl>
+            <span class="case-visit">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg></span>
           </a>
           <a class="case-card" href="https://acequads.com" target="_blank" rel="noreferrer">
             <p>Corporate Presence</p>
             <h3>Ace Quads</h3>
-            <span>Business website and service pages</span>
+            <span>React, business website and service pages</span>
             <img
-              src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Facequads.com%2F?w=900"
+              loading="eager" decoding="async" width="900" height="675"
+              src="assets/projects/ace-quads.jpg"
               alt="Ace Quads website preview"
             />
+            <dl class="case-details">
+              <div><dt>Need</dt><dd>Create a clear corporate web presence.</dd></div>
+              <div><dt>My work</dt><dd>Built the business website and service pages with React.</dd></div>
+              <div><dt>Delivered</dt><dd>A central place to explore company services.</dd></div>
+            </dl>
+            <span class="case-visit">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg></span>
           </a>
           <a class="case-card" href="https://boothxperts.com" target="_blank" rel="noreferrer">
             <p>Exhibition Website</p>
             <h3>Booth Xperts</h3>
             <span>Responsive website development</span>
             <img
-              src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fboothxperts.com%2F?w=900"
+              loading="eager" decoding="async" width="900" height="675"
+              src="assets/projects/booth-xperts.jpg"
               alt="Booth Xperts website preview"
             />
+            <dl class="case-details">
+              <div><dt>Need</dt><dd>Present exhibition services across screen sizes.</dd></div>
+              <div><dt>My work</dt><dd>Developed a responsive exhibition website.</dd></div>
+              <div><dt>Delivered</dt><dd>Service information accessible on desktop and mobile.</dd></div>
+            </dl>
+            <span class="case-visit">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg></span>
           </a>
           <a class="case-card" href="https://nirogin.com/" target="_blank" rel="noreferrer">
-            <p>Healthcare Platform</p>
+            <p>Shopify Store</p>
             <h3>Nirogin Website</h3>
-            <span>React and Python development</span>
+            <span>Shopify, storefront development</span>
             <img
+              loading="eager" decoding="async" width="900" height="900"
               class="product-preview"
-              src="https://nirogin.com/cdn/shop/files/ChatGPT_Image_Jun_4_2026_05_50_19_PM.webp?v=1780575657&width=900"
+              src="assets/projects/nirogin.jpg"
               alt="Nirogin website preview"
             />
+            <dl class="case-details">
+              <div><dt>Need</dt><dd>Build a customer-facing healthcare storefront.</dd></div>
+              <div><dt>My work</dt><dd>Developed the website on Shopify.</dd></div>
+              <div><dt>Delivered</dt><dd>A Shopify storefront for healthcare products.</dd></div>
+            </dl>
+            <span class="case-visit">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg></span>
           </a>
           <a class="case-card progress" href="https://konkon.in" target="_blank" rel="noreferrer">
             <p>Work In Progress</p>
             <h3>Konkon.in</h3>
-            <span>React + Python product build</span>
+            <span>React, Python, payment gateway integration</span>
             <img
-              src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fkonkon.in%2F?w=900"
+              loading="eager" decoding="async" width="900" height="675"
+              src="assets/projects/konkon.jpg"
               alt="Konkon website preview"
             />
+            <dl class="case-details">
+              <div><dt>Need</dt><dd>Develop a new web product.</dd></div>
+              <div><dt>My work</dt><dd>Integrated a payment gateway into the React and Python product build.</dd></div>
+              <div><dt>Status</dt><dd>Payment gateway integrated; product development is ongoing.</dd></div>
+            </dl>
+            <span class="case-visit">Explore progress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg></span>
           </a>
         </div>
       </section>
 
       <section id="stack" class="section stack-section">
-        <div class="section-heading">
-          <p class="section-kicker">Tech Stack</p>
-          <h2>A practical toolset for shipping complete web products.</h2>
-          <p>
-            Modern technologies I work with to build fast, scalable and maintainable web applications.
-          </p>
+        <div class="stack-heading">
+          <p class="stack-kicker"><span aria-hidden="true"></span> Tools &amp; Technologies</p>
+          <h2>Technology Stack</h2>
+          <p>Modern tools to build high-performance web solutions.</p>
         </div>
-        <div class="stack-board">
-          <div>
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, React JS, HTMX</p>
-          </div>
-          <div>
-            <h3>Backend</h3>
-            <p>Python, Flask, PHP, API logic, admin workflows</p>
-          </div>
-          <div>
-            <h3>Database</h3>
-            <p>PostgreSQL, MySQL, client and project management data</p>
-          </div>
-          <div>
-            <h3>Core CS</h3>
-            <p>Java, C++, C Programming, application fundamentals</p>
-          </div>
-        </div>
+        <ul class="tech-grid" aria-label="Technologies I work with">
+          <li class="tech-card">
+            <img src="assets/stack/python.svg" width="36" height="36" alt="" decoding="async" />
+            <span>Python</span>
+          </li>
+          <li class="tech-card">
+            <img src="assets/stack/flask.svg" width="36" height="36" alt="" decoding="async" />
+            <span>Flask</span>
+          </li>
+          <li class="tech-card">
+            <img src="assets/stack/php.svg" width="36" height="36" alt="" decoding="async" />
+            <span>PHP</span>
+          </li>
+          <li class="tech-card">
+            <img src="assets/stack/javascript.svg" width="36" height="36" alt="" decoding="async" />
+            <span>JavaScript</span>
+          </li>
+          <li class="tech-card">
+            <img src="assets/stack/react.svg" width="36" height="36" alt="" decoding="async" />
+            <span>React</span>
+          </li>
+          <li class="tech-card">
+            <img src="assets/stack/htmx.svg" width="36" height="36" alt="" decoding="async" />
+            <span>HTMX</span>
+          </li>
+          <li class="tech-card">
+            <img src="assets/stack/postgresql.svg" width="36" height="36" alt="" decoding="async" />
+            <span>PostgreSQL</span>
+          </li>
+          <li class="tech-card">
+            <img src="assets/stack/mysql.svg" width="36" height="36" alt="" decoding="async" />
+            <span>MySQL</span>
+          </li>
+          <li class="tech-card">
+            <img src="assets/stack/html5.svg" width="36" height="36" alt="" decoding="async" />
+            <span>HTML5</span>
+          </li>
+          <li class="tech-card">
+            <img src="assets/stack/css3.svg" width="36" height="36" alt="" decoding="async" />
+            <span>CSS3</span>
+          </li>
+        </ul>
       </section>
 
       <section id="services" class="section services-section">
-        <div class="section-heading">
-          <p class="section-kicker">Services</p>
-          <h2>What I can build for your business.</h2>
-          <p>
-            End-to-end web solutions tailored to your business needs, from internal tools to customer-facing platforms.
-          </p>
+        <div class="offerings-heading">
+          <div>
+            <p class="stack-kicker"><span aria-hidden="true"></span> What I Do</p>
+            <h2>My Services</h2>
+            <p>End-to-end web development solutions to help businesses grow digitally.</p>
+          </div>
+          <a class="services-link" href="#service-list">View All Services <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <div class="service-grid">
-          <article>
-            <span>01</span>
-            <h3>SaaS Dashboards</h3>
-            <p>Clean dashboard screens, data tables, filters, status cards, and admin panels.</p>
+        <div id="service-list" class="offerings-grid">
+          <article class="offering-card">
+            <span class="offering-icon orange" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9M8 5.2l8 4.5"/></svg>
+            </span>
+            <h3>Custom Web Applications</h3>
+            <p>Tailored web solutions for unique business requirements.</p>
           </article>
-          <article>
-            <span>02</span>
-            <h3>CRM Portals</h3>
-            <p>Lead, client, project, and follow-up workflows with backend storage.</p>
+          <article class="offering-card">
+            <span class="offering-icon purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18a4 4 0 0 1-.6-7.9 6 6 0 0 1 11.5-1.6A4.8 4.8 0 0 1 18 18H6Z"/></svg>
+            </span>
+            <h3>SaaS Development</h3>
+            <p>Feature-rich SaaS products with scalable architecture.</p>
           </article>
-          <article>
-            <span>03</span>
-            <h3>Business Websites</h3>
-            <p>Fast, responsive websites designed to present services and capture enquiries.</p>
+          <article class="offering-card">
+            <span class="offering-icon blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16M8 16v-4m4 4V9m4 7v-6M7 8l5-3 4 2 4-4"/><path d="M17 3h3v3"/></svg>
+            </span>
+            <h3>CRM &amp; Business Portals</h3>
+            <p>Lead management, reporting and workflow automation.</p>
+          </article>
+          <article class="offering-card">
+            <span class="offering-icon green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M7 7h.01M10 7h.01m-2 6-2 2 2 2m8-4 2 2-2 2m-5 0 2-4"/></svg>
+            </span>
+            <h3>Website Development</h3>
+            <p>Modern, responsive and SEO-friendly websites.</p>
+          </article>
+          <article class="offering-card">
+            <span class="offering-icon orange" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-10-2 12"/></svg>
+            </span>
+            <h3>API Integration</h3>
+            <p>Third-party integrations and custom APIs.</p>
           </article>
         </div>
       </section>
 
       <section id="experience" class="section experience-section">
-        <div class="section-heading">
-          <p class="section-kicker">Experience</p>
-          <h2>Career progression at Stall Designs.</h2>
-          <p>
-            My journey from a Front-End Developer to a Full Stack Developer, now building responsive websites,
-            CRM workflows, backend features, and business tools.
-          </p>
+        <div class="career-heading">
+          <p class="stack-kicker"><span aria-hidden="true"></span> My Journey</p>
+          <h2>From interfaces to complete products.</h2>
+          <p>Growing from frontend development into websites, CRM systems and business tools.</p>
         </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <time>Oct 2022 - Present</time>
-            <div>
-              <h3>Full Stack Developer, Stall Designs</h3>
-              <p>
-                Joined Stall Designs in 2022 as a Front-End Developer and grew into a Full Stack Developer role,
-                now building responsive websites, CRM workflows, backend features, and business tools using
-                React, Python, Flask, HTMX, and PostgreSQL.
-              </p>
-            </div>
-          </article>
-        </div>
+        <article class="career-card">
+          <div class="career-company">
+            <span class="company-monogram" aria-hidden="true">SD</span>
+            <div><h3>Stall Designs</h3><p>Full Stack Developer</p></div>
+            <div class="career-period"><span class="current-role">Current role</span><p>Oct 2022 &ndash; Present</p></div>
+          </div>
+          <div class="career-path" aria-label="Career progression">
+            <div><small>Where I started</small><strong>Front-End Developer</strong><span>Joined in 2022</span></div>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6" /></svg>
+            <div><small>What I do now</small><strong>Full Stack Developer</strong><span>Frontend, backend &amp; business workflows</span></div>
+          </div>
+          <ul class="career-focus experience-points">
+            <li><span class="career-number" aria-hidden="true">01</span><h4>Responsive interfaces</h4><p>Build websites and interfaces with React and HTMX, across desktop and mobile.</p></li>
+            <li><span class="career-number" aria-hidden="true">02</span><h4>CRM &amp; backend development</h4><p>Develop lead, client and follow-up workflows with Python and Flask.</p></li>
+            <li><span class="career-number" aria-hidden="true">03</span><h4>Business data &amp; tools</h4><p>Work with PostgreSQL to support client, project and business operations.</p></li>
+          </ul>
+          <div class="career-tools" aria-label="Technologies used"><span>React</span><span>Python</span><span>Flask</span><span>HTMX</span><span>PostgreSQL</span></div>
+        </article>
       </section>
     </main>
 
     <footer id="contact" class="footer">
-      <div>
-        <p class="section-kicker">Let's Work Together</p>
-        <h2>Ready to build a sharper web product?</h2>
-        <p>Share your idea and let's turn it into a high-performing web product.</p>
+      <div class="footer-main">
+        <div class="footer-copy">
+          <p class="section-kicker">Let's Build Together</p>
+          <h2>Your next idea.<br /><em>Let's make it real.</em></h2>
+          <p>From your first website to a custom business platform, let's build something that works for you.</p>
+          <a class="footer-cta" href="https://wa.me/919555909344?text=Hi%20Abhishek%2C%20I%20want%20to%20discuss%20a%20project%20with%20you." target="_blank" rel="noreferrer">
+            Let's talk about your project
+            <span class="footer-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
+            </span>
+          </a>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-contact-title">Get in touch</p>
+          <address>
+            <a class="contact-row" href="mailto:abhistackss@gmail.com">
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3" /><path d="m3 7 9 6 9-6" /></svg></span>
+              <span><small>Email me</small><strong>abhistackss@gmail.com</strong></span>
+              <svg class="contact-outward" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 18 18 6M6 6h12v12" /></svg>
+            </a>
+            <a class="contact-row" href="https://wa.me/919555909344?text=Hi%20Abhishek%2C%20I%20want%20to%20discuss%20a%20project%20with%20you." target="_blank" rel="noreferrer">
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a9 9 0 0 1-9 9 10 10 0 0 1-4-.9L3 21l1.4-4.8a9 9 0 1 1 16.6-4.7Z" /><path d="M8 9h8M8 13h5" /></svg></span>
+              <span><small>Chat on WhatsApp</small><strong>+91 95559 09344</strong></span>
+              <svg class="contact-outward" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 18 18 6M6 6h12v12" /></svg>
+            </a>
+            <a class="contact-row" href="https://www.linkedin.com/in/abhishek-chauhan-2a7040216" target="_blank" rel="noreferrer">
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3" /><path d="M7 10v7M7 7h.01M11 17v-7m0 3a3 3 0 0 1 6 0v4" /></svg></span>
+              <span><small>Let's connect</small><strong>LinkedIn Profile</strong></span>
+              <svg class="contact-outward" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 18 18 6M6 6h12v12" /></svg>
+            </a>
+          </address>
+        </div>
       </div>
-      <a
-        class="footer-arrow"
-        href="https://wa.me/919555909344?text=Hi%20Abhishek%2C%20I%20want%20to%20discuss%20a%20project%20with%20you."
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Contact on WhatsApp"
-      >
-        ->
-      </a>
-      <address>
-        <a href="mailto:abhistackss@gmail.com">abhistackss@gmail.com</a>
-        <a
-          href="https://wa.me/919555909344?text=Hi%20Abhishek%2C%20I%20want%20to%20discuss%20a%20project%20with%20you."
-          target="_blank"
-          rel="noreferrer"
-        >
-          WhatsApp: +91 95559 09344
-        </a>
-        <a href="https://www.linkedin.com/in/abhishek-chauhan-2a7040216" target="_blank" rel="noreferrer">LinkedIn Profile</a>
-        <span>New Delhi, India</span>
-      </address>
+      <div class="footer-bottom">
+        <a class="footer-signature" href="#top">AbhiStacks<span>Abhishek Chauhan</span></a>
+        <p>New Delhi, India <span aria-hidden="true">&middot;</span> Available for projects</p>
+        <a class="footer-top-link" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
+      </div>
     </footer>
     <button class="back-to-top" type="button" aria-label="Go to top">
       <span></span>
     </button>
-    <div class="smoke-overlay" aria-hidden="true"></div>
   </body>
 </html>
