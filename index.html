@@ -16,10 +16,26 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=13" />
-    <script src="script.js?v=13" defer></script>
+    <script>
+      document.documentElement.classList.add("is-preloading");
+      window.setTimeout(() => document.documentElement.classList.remove("is-preloading"), 1400);
+    </script>
+    <link rel="stylesheet" href="styles.css?v=15" />
+    <script src="script.js?v=15" defer></script>
   </head>
   <body>
+    <div class="preloader" role="status" aria-label="Loading portfolio">
+      <div class="preloader-content">
+        <div class="preloader-code" aria-hidden="true">
+          <svg viewBox="0 0 80 56" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <path class="code-left" d="m23 16-12 12 12 12" />
+            <path class="code-slash" d="m46 10-12 36" />
+            <path class="code-right" d="m57 16 12 12-12 12" />
+          </svg>
+        </div>
+        <p class="preloader-caption">Building the experience<span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+      </div>
+    </div>
     <header class="site-header">
       <a class="brand" href="#top">
         <span>AC</span>

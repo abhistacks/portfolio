@@ -2,6 +2,20 @@ const backToTop = document.querySelector(".back-to-top");
 const header = document.querySelector(".site-header");
 const mobileViewport = window.matchMedia("(max-width: 760px)");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const finishPreloader = () => {
+  document.documentElement.classList.remove("is-preloading");
+  window.setTimeout(() => document.querySelector(".preloader")?.remove(), 200);
+};
+// Keep cached loads brief; the head script caps slower loads at 1.4 seconds.
+const revealPortfolio = () => {
+  const delay = reducedMotion.matches ? 0 : Math.max(0, 280 - performance.now());
+  window.setTimeout(finishPreloader, delay);
+};
+if (document.readyState === "complete") revealPortfolio();
+else window.addEventListener("load", revealPortfolio, { once: true });
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) finishPreloader();
+});
 const typewriter = document.querySelector(".typewriter-live");
 const typewriterPhrases = [
   "websites that drive results.",
