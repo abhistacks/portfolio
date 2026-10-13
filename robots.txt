@@ -1,0 +1,5 @@
+# robots.txt for AbhiStacks Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://abhistackss.github.io/sitemap.xml

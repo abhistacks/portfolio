@@ -2,6 +2,27 @@ const backToTop = document.querySelector(".back-to-top");
 const header = document.querySelector(".site-header");
 const mobileViewport = window.matchMedia("(max-width: 760px)");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+const finishPreloader = () => {
+  document.documentElement.classList.remove("is-preloading");
+  window.setTimeout(() => document.querySelector(".preloader")?.remove(), 200);
+};
+
+const revealPortfolio = () => {
+  const delay = reducedMotion.matches ? 0 : 100;
+  window.setTimeout(finishPreloader, delay);
+};
+
+if (document.readyState === "complete") {
+  revealPortfolio();
+} else {
+  window.addEventListener("load", revealPortfolio, { once: true });
+}
+window.setTimeout(revealPortfolio, 3000);
+
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) finishPreloader();
+});
 const typewriter = document.querySelector(".typewriter-live");
 const typewriterPhrases = [
   "websites that drive results.",
@@ -98,6 +119,22 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     });
     history.pushState(null, "", targetId);
   });
+});
+
+window.addEventListener("popstate", () => {
+  const hash = location.hash;
+  if (hash) {
+    const target = document.querySelector(hash);
+    if (target) {
+      showHeader();
+      const offset = headerSpace;
+      const targetY = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({
+        top: Math.max(targetY, 0),
+        behavior: reducedMotion.matches ? "instant" : "smooth",
+      });
+    }
+  }
 });
 
 let scrollFramePending = false;
